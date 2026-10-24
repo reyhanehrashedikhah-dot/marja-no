@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <form action="" method="post">
+            <h2>ثبت سفارش</h2>
+            
+            <label for="fullname">نام و نام خانوادگی: </label>
+            <input type="text" id="fullname" required><br><br>
+            
+            <label for="phone">شماره تلفن: </label>
+            <input type="tel" id="phone" placeholder="09xx-xxx-xxxx"><br><br>
+            
+            <label for="address">آدرس: </label><br>
+            <textarea id="address" rows="3" cols="50" required></textarea><br><br>
+            
+            <fieldset>
+                <legend>انتخاب زمان ارسال</legend>
+                <input type="radio" name="time" id="time1" value="saturday-11-15">
+                <label for="time1">شنبه ۱۱ تا ۱۵</label><br>
+                
+                <input type="radio" name="time" id="time2" value="saturday-16-20">
+                <label for="time2">شنبه ۱۶ تا ۲۰</label>
+            </fieldset><br><br>
+            
+            <label for="payment-method">روش پرداخت: </label>
+            <select id="payment-method" required>
+                <option value="online">درگاه اینترنتی</option>
+                <option value="cash">پرداخت در محل</option>
+            </select><br><br>
+            
+            <input type="checkbox" id="terms">
+            <label for="terms">من شرایط و ضوابط را می‌پذیرم</label>
+            <br><br>
+            
+            <button type="submit">تایید سفارش</button>
+        </form>
+    </body>
+</html>
